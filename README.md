@@ -63,11 +63,11 @@ aws ecr create-repository --repository-name sports-api --region us-east-1
 
 ### **Authenticate Build and Push the Docker Image**
 ```bash
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 222046373372.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS-ACCOUNT>.dkr.ecr.us-east-1.amazonaws.com
 
 docker build --platform linux/amd64 -t sports-api .
-docker tag sports-api:latest 222046373372.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
-docker push 222046373372.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+docker tag sports-api:latest <AWS-ACCOUNT>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+docker push <AWS-ACCOUNT>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 ```
 
 ### **Set Up ECS Cluster with Fargate**
