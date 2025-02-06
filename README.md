@@ -53,7 +53,7 @@ sports-api-management/
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/ifeanyiro9/containerized-sports-api.git
+git clone https://github.com/zokalo27/.git
 cd containerized-sports-api
 ```
 ### **Create ECR Repo**
@@ -82,14 +82,14 @@ docker push <AWS-ACCOUNT>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-
 - For Infrastructure, select Fargate
 - Add the container:
   - Name your container (sports-api-container)
-  - Image URI: 222046373372.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+  - Image URI: AWS-ACCOUNT.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
   - Container Port: 8080
   - Protocol: TCP
   - Port Name: Leave Blank
   - App Protocol: HTTP
 - Define Environment Eariables:
-  - Key: SPORTS_API_KEY
-  - Value: <YOUR_SPORTSDATA.IO_API_KEY>
+  - Key: SERP_API_KEY
+  - Value: <YOUR_SERP_API_KEY>
   - Create task definition
 3. Run the Service with an ALB
 - Go to Clusters → Select Cluster → Service → Create.
