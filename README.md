@@ -23,7 +23,7 @@ This project demonstrates building a containerized API management system for que
 ---
 
 ## **Technical Architecture**
-![Brown Minimalist Lifestyle Daily Vlog YouTube Thumbnail (2)](https:/github.com/Zokalo27/30days-containerized-sports-api/images/Containerized-sports-api.png)
+![Brown Minimalist Lifestyle Daily Vlog YouTube Thumbnail (2)](https://github.com/Zokalo27/30days-containerized-sports-api/blob/main/images/Containerized-sports-api.png)
 
 ---
 
